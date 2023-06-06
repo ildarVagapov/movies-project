@@ -4,13 +4,13 @@ import { Preloader } from "../components/Preloader";
 import { Search } from "../components/Search";
 
 const API_KEY = process.env.REACT_APP_API_KEY;
+console.log('ghbd')
 
 class Main extends React.Component {
 	state = {
 		movies: [],
 		loading: true,
 	};
-
 	componentDidMount() {
 		fetch(`https://www.omdbapi.com/?apikey=78584b3c&s=matrix`)
 			.then((response) => response.json())
